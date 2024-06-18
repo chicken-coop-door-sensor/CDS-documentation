@@ -166,3 +166,7 @@ The system comprises several key components:
 - Documentation references
 - Online resources
 - Technical support forums
+
+![](.README_images/controller-box.png)
+![](.README_images/led-box.png)
+![](.README_images/sensor-cable.png)
