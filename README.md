@@ -171,3 +171,4 @@ The system comprises several key components:
 ![](.README_images/led-box.png)
 ![](.README_images/sensor-cable.png)
 ![](.README_images/circuit_diagram.png)
+![](.README_images/overview_diagram.png)
