@@ -115,5 +115,5 @@ The system comprises several key components:
 
 ## 4. Hardware Setup
 
-    ![](.README_images/circuit_diagram.png)
+![](.README_images/circuit_diagram.png)
 
