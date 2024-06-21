@@ -19,13 +19,21 @@ properly managed without modifying the door mechanism or the chickens themselves
 - Automated monitoring and alerts to prevent door closure or opening failures.
 - Minimal intervention required for installation and maintenance.
 
+  ![](.README_images/overview_diagram.png)
+
 ### System Components
 
 The system comprises several key components:
 
 - **ESP32 Controller:** Acts as the central processing unit, reading sensor data and sending status messages.
+  ![](.README_images/controller-box.png)
+
 - **Infrared Slotted Optical Optocoupler:** Detects the open or closed state of the chicken coop door.
+  ![](.README_images/sensor-cable.png)
+
 - **10mm LED Bulb:** Provides a visual indication of the door status (red for open, green for closed).
+  ![](.README_images/led-box.png)
+
 - **Amazon Web Services (AWS):** Handles the logic and text messaging for status notifications.
 
 ## 2. System Requirements
@@ -90,85 +98,22 @@ The system comprises several key components:
 
 ### Additional Components
 
-- Wires: For making connections between components.
-- Breakout board: For mounting the esp32
-- Power supply: To provide necessary voltage and current to the ESP32 and LED.
+- [4-Conductor Cables](https://a.co/d/0fCfwvHX): For making connections between components.
+- [Breakout board](https://a.co/d/06QKfIQ6): For mounting the esp32
+- [Power supply](https://a.co/d/0fpwT79p): To provide necessary voltage and current to the ESP32 and LED.
+- [Junction box](https://a.co/d/0dfNJWWr): To house the components and protect them from the elements.
+- [Small project box](https://a.co/d/03lNSH8F): To house the LED and provide a visual indicator.
+- [Magnetic Tape](https://a.co/d/069PrKfB): To mount the LED box on the window.
+- [Modular Cable Glands](https://a.co/d/02YTsWza): To protect the sensor cables from the elements.
+- [Heat Shrink Tubing](https://a.co/d/05rrKd19): To protect the connections from moisture.
+- [Lighter](https://a.co/d/0b2d17m7): To shrink the heat shrink tubing.
+- [Modular cable connectors](https://a.co/d/04SX0LEV): To connect junction box to peripherals.
+- [Staple gun](https://a.co/d/03DUsZJa): To secure the sensor cables to the coop.
+- [Screwdriver](https://a.co/d/0dFNETHJ): To mount the components.
+- [Wire stripper](https://a.co/d/0c3bSzBu): To strip the wire ends for connections.
+- [Multimeter](https://a.co/d/0cgQwKO0): To check the voltage and current.
 
 ## 4. Hardware Setup
 
-- **Schematic Diagram**
-  - Circuit diagram with all connections
-- **Step-by-Step Assembly Instructions**
-  - Mounting the sensor
-  - Connecting the ESP32
-  - Connecting the LED
-  - Powering the system
+    ![](.README_images/circuit_diagram.png)
 
-## 5. Software Setup
-
-- **Installing Micropython on ESP32**
-- **Writing the ESP32 Code**
-  - Reading the sensor
-  - Sending status messages
-  - Code examples
-- **Configuring AWS**
-  - Setting up AWS API Gateway
-  - Creating Lambda functions
-  - Setting up CloudWatch monitoring
-  - Configuring SNS for text alerts
-
-## 6. Installation in the Chicken Coop
-
-- Selecting a location for the sensor and LED
-- Mounting instructions
-- Weatherproofing considerations
-- Ensuring proper alignment of the sensor
-
-## 7. Testing and Troubleshooting
-
-- **Testing the sensor**
-  - Verifying sensor readings
-  - Checking LED indicators
-- **Testing AWS integration**
-  - Sending test messages
-  - Verifying Lambda function execution
-- **Common Issues and Solutions**
-  - Sensor not reading correctly
-  - LED not lighting up
-  - AWS notifications not received
-
-## 8. Maintenance and Upgrades
-
-- **Regular maintenance tasks**
-  - Checking sensor alignment
-  - Ensuring LED functionality
-  - Verifying AWS connectivity
-- **Potential upgrades**
-  - Adding more sensors
-  - Enhancing notification options
-
-## 9. Safety and Best Practices
-
-- Electrical safety guidelines
-- Handling and care for components
-- Best practices for reliable operation
-
-## 10. Appendix
-
-- Glossary of terms
-- Additional resources
-  - Links to datasheets
-  - Relevant tutorials
-- Contact information for support
-
-## 11. References
-
-- Documentation references
-- Online resources
-- Technical support forums
-
-![](.README_images/controller-box.png)
-![](.README_images/led-box.png)
-![](.README_images/sensor-cable.png)
-![](.README_images/circuit_diagram.png)
-![](.README_images/overview_diagram.png)
